@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+* {
+    padding: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-size: 100%;
+    font-family: 'Baskervville', serif;
+    background-image: url(Fundoo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.cabecalho {
+    background: #574F76;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 68.1px;
+}
+.cabecalho-imagem{
+    background: #EBECF0;
+    border-radius: 30px;
+    display: flex;
+}
+.cabecalho-imagem:hover{
+    box-shadow:0 0 20px #bda35e;
+    transition: 0.5s;
+}
+.cabecalho-menu{
+    display: flex;
+    gap: 30px;
+    margin-left: 410.4px;
+    padding-top: 96px;
+    padding-right: 15.5;
+}
+.cabecalho-menu-item{
+    z-index: 2;
+    background: #EBECF0;
+    font-family: 'Baskervville', serif;
+    font-size: 25px;
+    border-radius: 15px;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+.cabecalho-menu-item:hover{
+    letter-spacing: 0.15em;
+    box-shadow: 0 0 35px #bda35e;
+}
+.conteudo-cartao{
+    display: flex;
+    background: #574F76;
+    margin-top: 64px;
+    margin-left: 17.8;
+    margin-right: 17.8;
+    border-radius: 30px;
+    padding: 10;
+    align-items: center;
+}
+.foto-cacilda{
+    position: relative;
+    left: 30px;
+    border-radius: 30px;
+}
+.cartao-imagem{
+    z-index: 1;
+    position: relative;
+    top: -150px;
+    left: 261.9;
+}
