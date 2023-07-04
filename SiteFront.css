@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+
 * {
     padding: 0;
     padding: 0;
@@ -42,31 +43,242 @@ body {
     font-family: 'Baskervville', serif;
     font-size: 25px;
     border-radius: 15px;
-    padding: 10px 30px;
+    padding: 5px 30px;
     transition: 0.5s;
 }
 .cabecalho-menu-item:hover{
     letter-spacing: 0.15em;
     box-shadow: 0 0 35px #bda35e;
 }
+
+.conteudo{
+    display: flex;
+    margin-left: 17.8px;
+    margin-right: 17.8px;
+    flex-wrap:wrap;
+}
 .conteudo-cartao{
     display: flex;
     background: #574F76;
     margin-top: 64px;
     margin-left: 17.8;
-    margin-right: 17.8;
     border-radius: 30px;
     padding: 10;
-    align-items: center;
+    flex-wrap:wrap;
 }
-.foto-cacilda{
+.foto-cacilda{    
+    animation: sideSection .5s ease-in-out forwards;
+    cursor: pointer;
     position: relative;
     left: 30px;
     border-radius: 30px;
+    filter: blur(0);
 }
 .cartao-imagem{
     z-index: 1;
     position: relative;
     top: -150px;
     left: 261.9;
+}
+.foto-cacilda:hover{
+    transition: .5s ease-in;
+    filter: blur(1px);
+}
+.slogan{
+    position: relative;
+    z-index: 3;
+    color:#EBECF0;
+    display: flex;
+    margin-left: 900px;
+    margin-top: -350px;
+    font-size: 45;
+}
+.cartao-item { 
+    display: flex;
+    color: #EBECF0;
+    margin-left: 800px;
+    margin-top: -200px;
+    font-size: 25px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.infogeral{
+    display: flex;
+    margin-top: 64px;
+    margin-left: 17.8;
+    border-radius: 30px;
+    padding: 10;
+}
+.Sobres{
+    padding: 60px;
+    color: #fff;
+}
+
+.Sobres ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Sobres ul li{
+    cursor: pointer;
+    position: relative;
+    padding: 5px;
+    border-radius: 6px;
+    align-content: center;
+    display: grid;
+    gap: 30px;
+    text-align: center;
+    max-width: 800px;
+    height: 400px;
+    background-color: #574F76;
+
+}
+
+.Sobres ul li h3{
+    color: #EBECF0;
+    font-size: 45px;
+    font-family:'Baskervville', serif;
+    font-weight: 500;
+}
+
+.Sobres ul li p{
+    color: #EBECF0;
+    font-size: 30px;
+}
+
+.Sobres li::before{
+    content: '';
+    transition: .5s ease-in-out;
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    border-top: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.Sobres li::after{
+    content: '';
+    transition: .5s ease-in-out;
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+
+.Sobres li:hover::before{
+    width: 100%;
+    height: 100%;
+    border-top: 5px solid #bda35e;
+    border-right: 5px solid #bda35e;
+}
+
+.Sobres li:hover::after{
+    width: 100%;
+    height: 100%;
+    border-bottom: 5px solid #bda35e;
+    border-left: 5px solid #bda35e;
+}
+.titulo-areas{
+    z-index: 2;
+    color: #EBECF0;
+    background: #574F76;
+    font-family: 'Baskervville', serif;
+    font-size: 55px;
+    border-radius: 15px;
+    padding: 5px 30px;
+    transition: 0.5s;
+    margin-left: 60px;
+}
+.titulo-areas:hover{
+    letter-spacing: 0.15em;
+    box-shadow: 0 0 35px #bda35e;
+}
+.Areas-atuacao{
+    padding: 60px;
+    color: #fff;
+}
+
+.Areas-atuacao ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Areas-atuacao ul li{
+    cursor: pointer;
+    position: relative;
+    padding: 5px;
+    border-radius: 6px;
+    align-content: center;
+    display: grid;
+    gap: 30px;
+    text-align: center;
+    max-width: 500px;
+    height: 400px;
+    background-color: #574F76;
+
+}
+
+.Areas-atuacao ul li h3{
+    color: #EBECF0;
+    font-size: 35px;
+    font-family:'Baskervville', serif;
+    font-weight: 500;
+}
+
+.Areas-atuacao ul li p{
+    color: #EBECF0;
+    font-size: 25px;
+}
+
+.Areas-atuacao li::before{
+    content: '';
+    transition: .5s ease-in-out;
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    border-top: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.Areas-atuacao li::after{
+    content: '';
+    transition: .5s ease-in-out;
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+
+.Areas-atuacao li:hover::before{
+    width: 100%;
+    height: 100%;
+    border-top: 5px solid #bda35e;
+    border-right: 5px solid #bda35e;
+}
+
+.Areas-atuacao li:hover::after{
+    width: 100%;
+    height: 100%;
+    border-bottom: 5px solid #bda35e;
+    border-left: 5px solid #bda35e;
 }
