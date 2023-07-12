@@ -36,7 +36,7 @@ body {
     gap: 30px;
     margin-left: 410.4px;
     padding-top: 96px;
-    padding-right: 15.5;
+    padding-right: 15.5px;
   }
   .cabecalho-menu-item {
     z-index: 2;
@@ -80,7 +80,7 @@ body {
     z-index: 1;
     position: relative;
     top: -150px;
-    left: 261.9px; 
+    left: 200px; 
   }
   .foto-cacilda:hover {
     transition: .5s ease-in;
@@ -88,17 +88,16 @@ body {
   }
   .slogan {
     position: relative;
-    z-index: 3;
     color: #EBECF0;
     display: flex;
-    margin-left: 50px;
+    margin-left: 800px;
     margin-top: -350px;
     font-size: 45px; 
   }
   .cartao-item {
     display: flex;
     color: #EBECF0;
-    margin-left: 50px;
+    margin-left: 800px;
     margin-top: -200px;
     font-size: 25px;
     flex-wrap: wrap;
@@ -269,7 +268,7 @@ body {
     border-bottom: 5px solid #bda35e;
     border-left: 5px solid #bda35e;
 }
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     .cabecalho {
       flex-direction: column;
       align-items: flex-start;
@@ -287,13 +286,10 @@ body {
     .conteudo {
         margin-left: 0;
         margin-right: 0;
+        flex-direction: column;
       }
-      .conteudo-cartao {
-        margin-left: 0;
-      }
-      .slogan,
-      .cartao-item {
-        margin-left: 0;
-        margin-top: 20px; 
-      }
+    .cartao-imagem{
+        display: none;
     }
+  }
+  
